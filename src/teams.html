@@ -21,40 +21,41 @@
 <body class="antialiased" style="background-color: #F4FBF8;">
 
   <!-- Navigation bar -->
-  <nav class="fixed top-0 z-50 w-full flex flex-wrap items-center justify-between px-2 py-3" id="header">
-  <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
-    <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-      <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-black"
-        href="#"><img src="/assets/podii_logo.svg" alt="" class="h-10 w-10"></a>
-        <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-        type="button"
-        onclick="toggleNavbar('example-collapse-navbar')">
-        <i class="text-black fas fa-bars"></i>
-      </button>
+  <nav class="fixed top-0 z-50 w-full flex flex-wrap items-center justify-between px-2 py-8" id="header">
+    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-black"
+          href="#"><img src="/assets/podii_logo.svg" alt="" class="h-10 w-10"></a>
+          <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          type="button"
+          onclick="toggleNavbar('example-collapse-navbar')">
+          <i class="text-black fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-collapse-navbar">
+        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+          <li class="mb-4">
+            <a class="lg:text-black lg:hover:text-gray-300 text-gray-800 px-8 py-4 lg:py-2 text-xl" href="/index.html">
+              <span class="ml-2" style="font-family: 'Forum', cursive;">Home</span></a>
+          </li>
+          <li class="mb-4">
+            <a class="lg:text-black lg:hover:text-gray-300 text-gray-800 px-8 py-4 lg:py-2 text-xl"href="/src/teams.html">
+              <span class="inline-block ml-2" style="font-family: 'Forum', cursive; color:#FF5E0E">Teams</span></a>
+              <div class="h-2 rounded  w-7 flex flex-grow items-center justify-start ml-10" style="background-color: #FF5E0E;"></div>
+
+          </li>
+          <li class="mb-4">
+            <a class="lg:text-black lg:hover:text-gray-300 text-gray-800 px-8 py-4 lg:py-2 text-xl"href="/src/portfolio.html">
+              <span class="inline-block ml-2 " style="font-family: 'Forum', cursive;">Portfolio</span></a>
+          </li>
+          <li class="mb-4">
+            <a class="lg:text-black lg:hover:text-gray-300 text-gray-800 px-8 py-4 lg:py-2 text-xl"href="#pablo">
+              <span class="inline-block ml-2" style="font-family: 'Forum', cursive;">Blog</span></a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-collapse-navbar">
-      <!-- id="example-collapse-navbar"> -->
-      <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-        <li class="flex items-center">
-          <a class="lg:text-black lg:hover:text-gray-300 text-gray-800 px-8 py-4 lg:py-2 flex items-center text-xl" href="/index.html">
-            <span class=" inline-block ml-2" style="font-family: 'Forum', cursive; ">Home</span></a>
-        </li>
-        <li class="flex items-center">
-          <a class="lg:text-black lg:hover:text-gray-300 text-gray-800 px-8 py-4 lg:py-2 flex items-center text-xl"href="/src/teams.html">
-            <span class="inline-block ml-2" style="font-family: 'Forum', cursive; color:#FF5E0E">Teams</span></a>
-        </li>
-        <li class="flex items-center">
-          <a class="lg:text-black lg:hover:text-gray-300 text-gray-800 px-8 py-4 lg:py-2 flex items-center text-xl"href="/src/portfolio.html">
-            <span class="inline-block ml-2" style="font-family: 'Forum', cursive;">Portfolio</span></a>
-        </li>
-        <li class="flex items-center">
-          <a class="lg:text-black lg:hover:text-gray-300 text-gray-800 px-8 py-4 lg:py-2 flex items-center text-xl"href="#pablo">
-            <span class="inline-block ml-2" style="font-family: 'Forum', cursive;">Blog</span></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
 
   <main>
     <!-- Landing Section -->
@@ -263,8 +264,9 @@
             </div>
           </div>
     </section>
-    <div class="flex flex-col items-center md:flex-row mb-10 md:mx-auto sm:text-center lg:max-w-4xl md:mb-12 md:py-24">
-        <h2 class="pt-8 mb-6 font-sans text-6xl font-bold leading-none tracking-wide md:mx-auto pr-8 text-center" style=" font-family: 'Forum', cursive; color:#307457">
+    <section  style="background-color:white;">
+    <div class="flex flex-col items-center md:flex-row mb-1 md:mx-auto sm:text-center lg:max-w-4xl md:py-24">
+        <h2 class="pt-8 mb-6 font-sans text-6xl font-bold leading-none tracking-wide md:mx-auto pr-8 text-center" style=" font-family: 'Forum', cursive; color:#307457; ">
           Let’s create together 
         </h2>
         <div class="flex flex-col items-center md:flex-row pt-8 ">
@@ -275,6 +277,7 @@
           </a>
         </div>
       </div>
+      </section>
 </main>
 <footer>
     <div style="background-color:#0F241B ; font-family: 'Forum', cursive;">
