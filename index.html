@@ -15,12 +15,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Forum&family=Jura:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/main.css">
 
   <title>podiihq</title>
 </head>
-<body class="antialiased" style="background-color: #F4FBF8;">
+<body class="antialiased" style="background-color: #F4FBF8;" data-barba="wrapper">
+  <ul class="transition">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
 
   <!-- Navigation bar -->
+  <main data-barba="container" data-barba-namespace="home">
   <nav class="fixed top-0 z-50 w-full flex flex-wrap items-center justify-between px-2 pt-8" id="header">
   <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
     <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
@@ -56,7 +65,7 @@
   </div>
 </nav>
 
-  <main>
+  
     <!-- Landing Section -->
     <section>
     <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 mt-8">
@@ -398,6 +407,9 @@
         </div>
       </div>
     </footer>
+
+
+    
 </body>
 <script>
   function toggleNavbar(collapseID) {
@@ -449,6 +461,9 @@
     }
   });
 </script>
+
+
+
 </html>
 
 
