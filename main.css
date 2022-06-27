@@ -1,4 +1,4 @@
-ul.transition {
+/* ul.transition {
     display: flex;
     position: absolute;
     z-index: 10;
@@ -14,4 +14,11 @@ ul.transition li{
     transform: scaleY(0);
     background: #FF5E0E;
     width: 20%;
-}
+} */
+
+
+
+/* .my-swap{
+    display:table;
+} */
+
